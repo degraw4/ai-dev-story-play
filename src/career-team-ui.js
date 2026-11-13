@@ -1,12 +1,12 @@
 import {actionError} from './action-errors.js';
 import {decisionImpact} from './management-feedback.js';
 import {impactCard} from './management-feedback-ui.js';
-import {contractOffers,promotionQuote,staffLevel,isBalancedCareer,promotionContributionPercent} from './game/career-team.js';
+import {contractOffers,promotionQuote,promotionTargets,staffLevel,isBalancedCareer,promotionContributionPercent} from './game/career-team.js';
 import {isNextCareer} from './game/career-next.js';
 import {DIRECTIONS,EMPLOYEES} from './game/content.js';
 import {applyAction,employeeAbilities,employeeTerms} from './game/rules.js';
 const el=(tag,text)=>{const n=document.createElement(tag);if(text!==undefined)n.textContent=text;return n;};
-const titles={coding:'编程',office:'办公',multimodal:'多模态',title:'仅职位（能力已满）'};
+const titles={coding:'编程',office:'办公',multimodal:'多模态',title:'只升职级（三项能力已满）'};
 export function recoveryDisplay(state,id){
   const stamina=state.career.stamina[id],target=state.career.resting[id],recovered=target&&stamina>=target;
   if(state.ending)return {label:`结算时体力 ${stamina} / 100${target?` · 当时正在休整（目标 ${target}）`:''}`,button:'经营已结束',action:target?'returnToWork':'rest',disabled:true};
@@ -52,11 +52,11 @@ export function createTeamUI({getState,dispatch,confirm,requestImpact=(a)=>dispa
       if(isBalancedCareer(s))controls.append(el('p',promotionContributionPercent(s,id)?'本人普通研发贡献持续 +10个百分点；工资每7日增加1万。方案、实验、特殊奖励及辅助任务不加成。':'新版晋升仅一次：完成后本人普通研发贡献持续 +10个百分点，后续每7日工资增加1万。'));
       if(s.ending||isBalancedCareer(s)&&staffLevel(s,id)>=2)continue;
       const select=el('select');select.setAttribute('aria-label',`${EMPLOYEES[id].name}晋升方向`);
-      for(const target of [...DIRECTIONS,'title']){const o=el('option',titles[target]);o.value=target;select.append(o);}
+      for(const target of promotionTargets(s,id)){const o=el('option',titles[target]);o.value=target;select.append(o);}
       const button=el('button','安排晋升'),help=el('p');button.type='button';
       const action=()=>({type:'startPromotion',employeeId:id,target:select.value});
       function update(){const trial=applyAction(s,action());button.disabled=!trial.ok;
-        try{const q=promotionQuote(s,id,select.value);help.textContent=`${q.cost}万 + ${q.rp}研究点，${q.days}有效日；完成后工资 ${employeeTerms(s,id).salary} → ${employeeTerms(s,id).salary+1}万/期，${q.target==='title'?'仅职位，不增加已满能力':'指定项+120经验及成长空间'}。${isBalancedCareer(s)?'本人普通研发贡献持续 +10个百分点；方案、实验和辅助任务不加成。':''}员工暂离主线，工资照常。${trial.ok?'':actionError(trial.error)}`;}
+        try{const q=promotionQuote(s,id,select.value);help.textContent=`${q.cost}万 + ${q.rp}研究点，${q.days}有效日；完成后工资 ${employeeTerms(s,id).salary} → ${employeeTerms(s,id).salary+1}万/期，${q.target==='title'?'三项能力已满，仅提升职级，不增加能力经验':'指定项+120经验及成长空间'}。${isBalancedCareer(s)?'本人普通研发贡献持续 +10个百分点；方案、实验和辅助任务不加成。':''}员工暂离主线，工资照常。${trial.ok?'':actionError(trial.error)}`;}
         catch(error){help.textContent=actionError(error.message);}}
       select.addEventListener('change',update);button.addEventListener('click',()=>requestImpact(action(),`为${EMPLOYEES[id].name}安排晋升？`));update();controls.append(select,button,help);
     }

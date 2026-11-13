@@ -146,7 +146,7 @@ dialog .staff-ability.active-ability{background:#fff3d2;border-color:#d0b774}
 .employee-row:has(>.character-portrait)>:nth-child(n+4){grid-column:2 / -1}.employee-row:has(>.character-portrait)>button:nth-child(n+4){justify-self:start}
 
 /* Office console: useful HUD above the scene, commands below; no tall camera gutters. */
-main#game{max-width:min(1480px,calc((100dvh - 320px)*2.32 + 48px));gap:6px;flex:0 1 auto;overflow-y:auto;padding-bottom:4px}
+main#game{max-width:none;gap:6px;flex:1 1 0;overflow-y:auto;overflow-x:hidden;padding:0 10px 4px;scrollbar-gutter:stable}
 #game .workspace{display:block;flex:0 0 auto;position:relative}
 #game .office-card{padding:0;display:flex;flex-direction:column}
 #game .dashboard{border:0;border-bottom:2px solid #809eaf;box-shadow:none;grid-template-columns:1.45fr repeat(4,minmax(0,1fr));gap:12px;padding:7px 12px;min-height:0}
@@ -211,8 +211,9 @@ main#game{max-width:min(1480px,calc((100dvh - 320px)*2.32 + 48px));gap:6px;flex:
  #game .career-resources{display:none}
  #game .office-sidebar{top:140px}
 }
-/* Keep the full console inside a laptop viewport without cropping the office. */
-main#game{max-width:min(1480px,calc((100dvh - 370px)*2.32 + 48px))}
+/* The console uses the window width; preserve the complete office and scroll
+   vertically on short windows instead of shrinking everything into a narrow card. */
+main#game{max-width:none}
 #game .dashboard .stat:last-child{display:grid;grid-template-columns:auto 1fr;column-gap:6px;align-items:center}
 #game .dashboard .stat:last-child>span{grid-column:1/-1}
 #game .dashboard #rating-value{font-size:9px;line-height:1.2;max-width:90px}
@@ -231,7 +232,7 @@ main#game{max-width:min(1480px,calc((100dvh - 370px)*2.32 + 48px))}
 #game .office-navigation [data-panel-target=news]>span:first-child{background-position:-100px 0}
 #game .office-navigation [data-panel-target=feedback]>span:first-child{background-position:-120px 0}
 #game .office-navigation>button,#game .office-navigation>button:last-child{min-height:48px;line-height:1.25}
-@media(max-width:1100px){main#game{max-width:min(1480px,calc((100dvh - 365px)*2.32 + 48px))}}
+@media(max-width:1100px){main#game{max-width:none}}
 @media(max-width:720px){
  main#game{max-width:100%}
  #game .development-strip{grid-template-columns:auto 1fr;gap:3px 8px}
@@ -242,6 +243,8 @@ main#game{max-width:min(1480px,calc((100dvh - 370px)*2.32 + 48px))}
 /* Auto vertical margins belong to the welcome screen, not the game console. */
 body:has(#game:not([hidden]))>.masthead{margin:0 auto;flex:0 0 auto}
 main#game{margin:0 auto}
+body:has(#game:not([hidden]))>.masthead,body:has(#game:not([hidden]))>footer{max-width:none;padding-left:14px;padding-right:14px}
+body:has(#game:not([hidden]))>.action-message{max-width:none;padding-left:14px;padding-right:14px}
 #game #seating-open{font-size:10px;line-height:1.4;padding:3px 6px;white-space:nowrap}
 #panel-seating{width:min(960px,calc(100vw - 24px));max-width:960px}
 .seating-map{position:relative;border:2px solid #94aeb8;background:#bfd1d7;margin:12px 0}
@@ -278,3 +281,32 @@ main#game{margin:0 auto}
 .feed-filters{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 8px}.feed-filters button{padding:7px 12px}.feed-filters button[aria-pressed=true]{background:#ffe598;border-color:#aa8543;color:#49391b}.feed-more{display:block;margin:14px auto}
 .history-row:focus{outline:2px solid #ac8746;outline-offset:3px}
 @media(max-width:520px){.cashflow-alert{align-items:flex-start;padding:5px 7px;font-size:11px}.feed-filters button{padding:6px 8px;font-size:12px}}
+
+/* On desktop the command rail uses window space beside the complete office.
+   The renderer still contains the 1856x800 plate inside its measured scene. */
+@media(min-width:1000px){
+ main#game{overflow:hidden;scrollbar-gutter:auto}
+ #game .workspace{display:flex;flex:1 1 0;min-height:0}
+ #game .office-card{display:grid;flex:1 1 0;min-width:0;min-height:0;grid-template-columns:minmax(0,1fr) clamp(220px,19vw,280px);grid-template-rows:auto auto auto minmax(0,1fr) auto;grid-template-areas:'stats stats' 'hud hud' 'alert alert' 'scene commands' 'progress commands'}
+ #game .dashboard{grid-area:stats}
+ #game .office-hud{grid-area:hud}
+ #game .cashflow-alert{grid-area:alert}
+ #game .office-scene{grid-area:scene;aspect-ratio:auto;min-height:0;align-self:stretch}
+ #game .development-strip{grid-area:progress;min-width:0}
+ #game .office-command-deck{grid-area:commands;min-height:0;min-width:0;overflow-y:auto;border-top:0;border-left:2px solid #809eaf;padding:9px;gap:9px}
+ #game .secretary-card{flex:0 0 auto;grid-template-columns:30px minmax(0,1fr);align-items:start;gap:6px 8px;padding:8px}
+ #game .secretary-card .secretary-avatar{align-self:start;grid-row:1}
+ #game .secretary-text{display:block;grid-row:auto;min-width:0}
+ #game .secretary-text p{font-size:11px;white-space:normal;display:block;overflow:visible;line-height:1.5;margin-top:3px}
+ #game .career-resources{display:block;margin:3px 0 0;font-size:10px}
+ #game .secretary-card #secretary-action{grid-column:1/-1;grid-row:auto;width:100%;white-space:normal;max-width:none}
+ #game .secretary-card #guide-help{grid-column:1/-1;grid-row:auto;justify-self:center;padding:0 4px}
+ #game .office-navigation{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;flex:0 0 auto}
+ #game .office-navigation>button,#game .office-navigation>button:last-child{min-height:61px;font-size:12px;gap:5px;padding:7px 4px}
+ #game .office-navigation>button:last-child{grid-column:1/-1;min-height:42px;flex-direction:row;gap:9px}
+}
+@media(max-width:430px){
+ .header-right{gap:6px}
+ .header-right #fullscreen-toggle{font-size:10px;padding:5px 6px}
+ body:has(#game:not([hidden]))>.masthead{padding-left:10px;padding-right:10px}
+}

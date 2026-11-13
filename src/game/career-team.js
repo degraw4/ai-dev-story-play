@@ -22,12 +22,14 @@ export function recordPublished(state,model){
   model.participation={...state.project.participation};
   for(const [id,work]of Object.entries(model.participation))if(work>=8){state.career.modelExperience[id]??=[];state.career.modelExperience[id].push(model.id);}
 }
+export function promotionTargets(state,id){
+  const targets=DIRECTIONS.filter((_,i)=>state.employeeExperience[id][i]<18*120);
+  return targets.length?targets:['title'];
+}
 export function promotionQuote(state,id,target){
   check(isNextCareer(state),'career-next-only');available(state,id);
   const level=staffLevel(state,id),count=state.career.modelExperience[id]?.length??0;check(level<(isBalancedCareer(state)?2:3),'promotion-complete');check(count>=(level===1?2:4),'promotion-experience');
-  const full=direction=>(state.employeeExperience[id][direction]>=18*120);
-  if(target==='title')check(DIRECTIONS.every((_,i)=>full(i)),'promotion-target');
-  else {const i=DIRECTIONS.indexOf(target);check(i>=0&&!full(i),'promotion-target');}
+  check(promotionTargets(state,id).includes(target),'promotion-target');
   return {kind:'promotion',label:level===1?'晋升资深成员':'晋升技术负责人',tier:level+1,cost:level===1?4:8,rp:level===1?12:24,days:level===1?3:5,target};
 }
 export function contractOffers(state){

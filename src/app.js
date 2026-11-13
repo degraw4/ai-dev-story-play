@@ -71,6 +71,22 @@ audio.setMusicVolume(settings.music / 100);
 audio.setEffectsVolume(settings.effects / 100);
 const office = createOfficeRenderer($('office'));
 const characterUI=createCharacterUI();
+const fullscreenButton=$('fullscreen-toggle'),fullscreenRoot=document.documentElement;
+const requestFullscreen=fullscreenRoot.requestFullscreen??fullscreenRoot.webkitRequestFullscreen;
+const exitFullscreen=document.exitFullscreen??document.webkitExitFullscreen;
+const fullscreenActive=()=>!!(document.fullscreenElement??document.webkitFullscreenElement);
+function renderFullscreen(){
+  const active=fullscreenActive();fullscreenButton.textContent=active?'退出全屏':'全屏';
+  fullscreenButton.setAttribute('aria-label',active?'退出全屏':'进入全屏');fullscreenButton.setAttribute('aria-pressed',String(active));
+}
+fullscreenButton.hidden=typeof requestFullscreen!=='function'||typeof exitFullscreen!=='function';
+fullscreenButton.addEventListener('click',async()=>{
+  fullscreenButton.disabled=true;
+  try{if(fullscreenActive())await exitFullscreen.call(document);else await requestFullscreen.call(fullscreenRoot);}
+  catch{showMessage('当前浏览器未允许网页全屏，可使用浏览器菜单中的全屏功能。',true);}
+  finally{fullscreenButton.disabled=false;renderFullscreen();}
+});
+document.addEventListener('fullscreenchange',renderFullscreen);document.addEventListener('webkitfullscreenchange',renderFullscreen);
 const seatingUI=createOfficeSeatingUI({getState:()=>state,getSeating:()=>officeSeating,office,canvas:$('office'),isLocked:()=>!started||writeBlocked||!!state.ending,commit:next=>{
   if(writeBlocked||state.ending)return false;const previous=officeSeating;officeSeating=next;
   if(!save()){officeSeating=previous;render();showMessage('工位未保存，请检查存档状态后重试。',true);return false;}
