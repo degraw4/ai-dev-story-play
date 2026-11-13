@@ -1,0 +1,1906 @@
+{
+  "version": "reference-copy-v2",
+  "canvas": [
+    1856,
+    800
+  ],
+  "characterScale": 1.3,
+  "scenes": {
+    "4": {
+      "source": "4-source.png",
+      "repairs": [
+        {
+          "label": "money-hud",
+          "rect": [
+            404,
+            12,
+            192,
+            84
+          ],
+          "offset": [
+            -8,
+            -1
+          ]
+        },
+        {
+          "label": "pointer",
+          "rect": [
+            357,
+            55,
+            26,
+            29
+          ],
+          "offset": [
+            13,
+            -9
+          ]
+        },
+        {
+          "label": "boss",
+          "polygon": [
+            [
+              622,
+              254
+            ],
+            [
+              676,
+              254
+            ],
+            [
+              695,
+              280
+            ],
+            [
+              697,
+              321
+            ],
+            [
+              677,
+              345
+            ],
+            [
+              619,
+              343
+            ],
+            [
+              609,
+              316
+            ],
+            [
+              611,
+              278
+            ]
+          ],
+          "offset": [
+            -10,
+            -3
+          ],
+          "padding": 7
+        },
+        {
+          "label": "secretary",
+          "polygon": [
+            [
+              792,
+              213
+            ],
+            [
+              826,
+              212
+            ],
+            [
+              847,
+              236
+            ],
+            [
+              847,
+              282
+            ],
+            [
+              830,
+              304
+            ],
+            [
+              793,
+              302
+            ],
+            [
+              786,
+              277
+            ],
+            [
+              786,
+              240
+            ]
+          ],
+          "offset": [
+            -12,
+            -3
+          ],
+          "padding": 7
+        },
+        {
+          "label": "standing-worker",
+          "polygon": [
+            [
+              1130,
+              332
+            ],
+            [
+              1166,
+              335
+            ],
+            [
+              1181,
+              354
+            ],
+            [
+              1182,
+              381
+            ],
+            [
+              1170,
+              392
+            ],
+            [
+              1175,
+              427
+            ],
+            [
+              1170,
+              461
+            ],
+            [
+              1123,
+              460
+            ],
+            [
+              1120,
+              425
+            ],
+            [
+              1122,
+              392
+            ],
+            [
+              1115,
+              373
+            ],
+            [
+              1117,
+              349
+            ]
+          ],
+          "offset": [
+            -17,
+            -5
+          ],
+          "padding": 7
+        },
+        {
+          "label": "seated-worker",
+          "polygon": [
+            [
+              1084,
+              443
+            ],
+            [
+              1115,
+              440
+            ],
+            [
+              1138,
+              460
+            ],
+            [
+              1141,
+              488
+            ],
+            [
+              1129,
+              502
+            ],
+            [
+              1131,
+              531
+            ],
+            [
+              1117,
+              553
+            ],
+            [
+              1082,
+              549
+            ],
+            [
+              1066,
+              530
+            ],
+            [
+              1065,
+              500
+            ],
+            [
+              1057,
+              483
+            ],
+            [
+              1061,
+              460
+            ]
+          ],
+          "offset": [
+            -14,
+            -6
+          ],
+          "padding": 7
+        },
+        {
+          "label": "watermark",
+          "rect": [
+            1650,
+            699,
+            125,
+            83
+          ],
+          "offset": [
+            -14,
+            -12
+          ]
+        },
+        {
+          "label": "top-player-border",
+          "rect": [
+            0,
+            0,
+            1828,
+            4
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        {
+          "label": "bottom-player-border",
+          "rect": [
+            0,
+            765,
+            1828,
+            17
+          ],
+          "offset": [
+            -7,
+            -8
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "boss-male",
+          "mode": "seatedFront",
+          "head": [
+            653,
+            285
+          ],
+          "foot": [
+            663,
+            405
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "secretary-female",
+          "mode": "seatedFront",
+          "head": [
+            814,
+            249
+          ],
+          "foot": [
+            824,
+            369
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "avery",
+          "mode": "seatedFront",
+          "head": [
+            950,
+            365
+          ],
+          "foot": [
+            960,
+            485
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "jules",
+          "mode": "seatedBack",
+          "head": [
+            1096,
+            471
+          ],
+          "foot": [
+            1107,
+            605
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "morgan",
+          "mode": "seatedFront",
+          "head": [
+            794,
+            445
+          ],
+          "foot": [
+            804,
+            565
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "casey",
+          "mode": "seatedBack",
+          "head": [
+            947,
+            546
+          ],
+          "foot": [
+            960,
+            682
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "max",
+          "mode": "standing",
+          "head": [
+            1173,
+            493
+          ],
+          "foot": [
+            1173,
+            610
+          ],
+          "direction": "southwest",
+          "route": [
+            [
+              1260,
+              654
+            ],
+            [
+              1180,
+              694
+            ],
+            [
+              1070,
+              641
+            ]
+          ]
+        }
+      ],
+      "occluders": [
+        {
+          "polygon": [
+            [
+              731,
+              548
+            ],
+            [
+              866,
+              480
+            ],
+            [
+              1001,
+              548
+            ],
+            [
+              881,
+              609
+            ],
+            [
+              881,
+              674
+            ],
+            [
+              812,
+              639
+            ],
+            [
+              812,
+              610
+            ],
+            [
+              731,
+              569
+            ]
+          ],
+          "depth": 675,
+          "actorIds": [
+            "morgan"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              792,
+              482
+            ],
+            [
+              861,
+              447
+            ],
+            [
+              914,
+              471
+            ],
+            [
+              914,
+              558
+            ],
+            [
+              846,
+              592
+            ],
+            [
+              792,
+              568
+            ]
+          ],
+          "depth": 675,
+          "actorIds": [
+            "morgan"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              887,
+              471
+            ],
+            [
+              1022,
+              403
+            ],
+            [
+              1157,
+              471
+            ],
+            [
+              1037,
+              532
+            ],
+            [
+              1037,
+              597
+            ],
+            [
+              968,
+              562
+            ],
+            [
+              968,
+              533
+            ],
+            [
+              887,
+              492
+            ]
+          ],
+          "depth": 598,
+          "actorIds": [
+            "avery"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              948,
+              405
+            ],
+            [
+              1017,
+              370
+            ],
+            [
+              1070,
+              394
+            ],
+            [
+              1070,
+              481
+            ],
+            [
+              1002,
+              515
+            ],
+            [
+              948,
+              491
+            ]
+          ],
+          "depth": 598,
+          "actorIds": [
+            "avery"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              599,
+              357
+            ],
+            [
+              768,
+              273
+            ],
+            [
+              826,
+              302
+            ],
+            [
+              656,
+              390
+            ],
+            [
+              656,
+              450
+            ],
+            [
+              600,
+              422
+            ]
+          ],
+          "depth": 470,
+          "actorIds": [
+            "boss-male"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              789,
+              313
+            ],
+            [
+              834,
+              291
+            ],
+            [
+              880,
+              314
+            ],
+            [
+              837,
+              337
+            ]
+          ],
+          "depth": 390,
+          "actorIds": [
+            "secretary-female"
+          ]
+        }
+      ],
+      "patches": [
+        "4-wall-patch.png"
+      ],
+      "width": 1828,
+      "height": 782,
+      "clean": "4-clean.png",
+      "mask": "4-repair-mask.png",
+      "diff": "4-diff.png",
+      "stats": {
+        "outsideMaskChanged": 0,
+        "repairPixels": 102279,
+        "changedRepairPixels": 102229,
+        "preservedPixels": 1327217,
+        "preservedPercent": 92.84510065085875
+      }
+    },
+    "6": {
+      "source": "6-source.png",
+      "repairs": [
+        {
+          "label": "money-hud",
+          "rect": [
+            404,
+            11,
+            184,
+            84
+          ],
+          "offset": [
+            -1,
+            2
+          ]
+        },
+        {
+          "label": "boss",
+          "rect": [
+            766,
+            151,
+            77,
+            101
+          ],
+          "offset": [
+            -2,
+            2
+          ],
+          "padding": 5
+        },
+        {
+          "label": "rear-worker",
+          "rect": [
+            931,
+            312,
+            72,
+            103
+          ],
+          "offset": [
+            0,
+            1
+          ],
+          "padding": 5
+        },
+        {
+          "label": "middle-worker",
+          "rect": [
+            785,
+            389,
+            74,
+            110
+          ],
+          "offset": [
+            0,
+            1
+          ],
+          "padding": 5
+        },
+        {
+          "label": "front-worker",
+          "rect": [
+            943,
+            479,
+            85,
+            121
+          ],
+          "offset": [
+            1,
+            1
+          ],
+          "padding": 5
+        },
+        {
+          "label": "rear-front-worker",
+          "rect": [
+            1110,
+            404,
+            83,
+            124
+          ],
+          "offset": [
+            3,
+            1
+          ],
+          "padding": 5
+        },
+        {
+          "label": "right-worker",
+          "rect": [
+            1278,
+            479,
+            77,
+            106
+          ],
+          "offset": [
+            2,
+            1
+          ],
+          "padding": 5
+        },
+        {
+          "label": "standing-worker",
+          "rect": [
+            1043,
+            535,
+            71,
+            122
+          ],
+          "offset": [
+            0,
+            3
+          ],
+          "padding": 5
+        },
+        {
+          "label": "secretary",
+          "rect": [
+            670,
+            625,
+            80,
+            131
+          ],
+          "offset": [
+            -1,
+            3
+          ],
+          "padding": 5
+        },
+        {
+          "label": "speech-bubble",
+          "rect": [
+            994,
+            424,
+            184,
+            115
+          ],
+          "offset": [
+            2,
+            0
+          ]
+        },
+        {
+          "label": "pointer",
+          "rect": [
+            1236,
+            466,
+            44,
+            34
+          ],
+          "offset": [
+            4,
+            2
+          ]
+        },
+        {
+          "label": "watermark",
+          "rect": [
+            1651,
+            698,
+            126,
+            82
+          ],
+          "offset": [
+            3,
+            2
+          ]
+        },
+        {
+          "label": "top-player-border",
+          "rect": [
+            0,
+            0,
+            1838,
+            4
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        {
+          "label": "bottom-player-border",
+          "rect": [
+            0,
+            765,
+            1838,
+            15
+          ],
+          "offset": [
+            0,
+            4
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "boss-male",
+          "mode": "seatedFront",
+          "head": [
+            804,
+            189
+          ],
+          "foot": [
+            814,
+            309
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "secretary-female",
+          "mode": "seatedFront",
+          "head": [
+            707,
+            667
+          ],
+          "foot": [
+            717,
+            787
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "avery",
+          "mode": "seatedFront",
+          "head": [
+            966,
+            350
+          ],
+          "foot": [
+            976,
+            470
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "jules",
+          "mode": "seatedBack",
+          "head": [
+            1144,
+            432
+          ],
+          "foot": [
+            1150,
+            563
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "morgan",
+          "mode": "seatedFront",
+          "head": [
+            819,
+            428
+          ],
+          "foot": [
+            829,
+            548
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "casey",
+          "mode": "seatedBack",
+          "head": [
+            982,
+            519
+          ],
+          "foot": [
+            991,
+            649
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "alex",
+          "mode": "seatedFront",
+          "head": [
+            1315,
+            519
+          ],
+          "foot": [
+            1325,
+            639
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "rebo",
+          "mode": "seatedFront",
+          "head": [
+            1146,
+            578
+          ],
+          "foot": [
+            1156,
+            698
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "max",
+          "mode": "standing",
+          "head": [
+            1037,
+            520
+          ],
+          "foot": [
+            1037,
+            640
+          ],
+          "direction": "southwest",
+          "route": [
+            [
+              984,
+              668
+            ],
+            [
+              905,
+              627
+            ],
+            [
+              788,
+              681
+            ]
+          ]
+        }
+      ],
+      "occluders": [
+        {
+          "polygon": [
+            [
+              771,
+              491
+            ],
+            [
+              891,
+              431
+            ],
+            [
+              955,
+              463
+            ],
+            [
+              836,
+              523
+            ],
+            [
+              836,
+              579
+            ],
+            [
+              771,
+              547
+            ]
+          ],
+          "depth": 580,
+          "actorIds": [
+            "morgan"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              824,
+              447
+            ],
+            [
+              893,
+              412
+            ],
+            [
+              948,
+              436
+            ],
+            [
+              948,
+              520
+            ],
+            [
+              878,
+              554
+            ],
+            [
+              824,
+              527
+            ]
+          ],
+          "depth": 580,
+          "actorIds": [
+            "morgan"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              927,
+              413
+            ],
+            [
+              1047,
+              353
+            ],
+            [
+              1111,
+              385
+            ],
+            [
+              992,
+              445
+            ],
+            [
+              992,
+              501
+            ],
+            [
+              927,
+              469
+            ]
+          ],
+          "depth": 502,
+          "actorIds": [
+            "avery"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              980,
+              369
+            ],
+            [
+              1049,
+              334
+            ],
+            [
+              1104,
+              358
+            ],
+            [
+              1104,
+              442
+            ],
+            [
+              1034,
+              476
+            ],
+            [
+              980,
+              449
+            ]
+          ],
+          "depth": 502,
+          "actorIds": [
+            "avery"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              1109,
+              676
+            ],
+            [
+              1228,
+              616
+            ],
+            [
+              1292,
+              648
+            ],
+            [
+              1292,
+              706
+            ],
+            [
+              1171,
+              764
+            ],
+            [
+              1109,
+              732
+            ]
+          ],
+          "depth": 764,
+          "actorIds": [
+            "rebo"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              1183,
+              615
+            ],
+            [
+              1245,
+              584
+            ],
+            [
+              1282,
+              603
+            ],
+            [
+              1282,
+              672
+            ],
+            [
+              1221,
+              703
+            ],
+            [
+              1183,
+              684
+            ]
+          ],
+          "depth": 764,
+          "actorIds": [
+            "rebo"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              1275,
+              593
+            ],
+            [
+              1394,
+              533
+            ],
+            [
+              1458,
+              565
+            ],
+            [
+              1458,
+              623
+            ],
+            [
+              1337,
+              681
+            ],
+            [
+              1275,
+              649
+            ]
+          ],
+          "depth": 681,
+          "actorIds": [
+            "alex"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              1349,
+              532
+            ],
+            [
+              1411,
+              501
+            ],
+            [
+              1448,
+              520
+            ],
+            [
+              1448,
+              589
+            ],
+            [
+              1387,
+              620
+            ],
+            [
+              1349,
+              601
+            ]
+          ],
+          "depth": 681,
+          "actorIds": [
+            "alex"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              755,
+              262
+            ],
+            [
+              884,
+              198
+            ],
+            [
+              955,
+              229
+            ],
+            [
+              827,
+              295
+            ],
+            [
+              827,
+              351
+            ],
+            [
+              755,
+              317
+            ]
+          ],
+          "depth": 360,
+          "actorIds": [
+            "boss-male"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              560,
+              695
+            ],
+            [
+              632,
+              657
+            ],
+            [
+              797,
+              730
+            ],
+            [
+              730,
+              764
+            ],
+            [
+              730,
+              780
+            ],
+            [
+              560,
+              780
+            ]
+          ],
+          "depth": 790,
+          "actorIds": [
+            "secretary-female"
+          ]
+        }
+      ],
+      "width": 1838,
+      "height": 780,
+      "clean": "6-clean.png",
+      "mask": "6-repair-mask.png",
+      "diff": "6-diff.png",
+      "stats": {
+        "outsideMaskChanged": 0,
+        "repairPixels": 157378,
+        "changedRepairPixels": 157298,
+        "preservedPixels": 1276262,
+        "preservedPercent": 89.02248821182445
+      }
+    },
+    "8": {
+      "source": "8-source.png",
+      "repairs": [
+        {
+          "label": "money-hud",
+          "rect": [
+            441,
+            14,
+            217,
+            86
+          ],
+          "offset": [
+            2,
+            -1
+          ]
+        },
+        {
+          "label": "headline-overlay",
+          "rect": [
+            1001,
+            15,
+            407,
+            80
+          ],
+          "offset": [
+            1,
+            1
+          ]
+        },
+        {
+          "label": "greeting-bubble",
+          "rect": [
+            247,
+            577,
+            141,
+            70
+          ],
+          "offset": [
+            0,
+            0
+          ]
+        },
+        {
+          "label": "secretary",
+          "rect": [
+            698,
+            599,
+            84,
+            122
+          ],
+          "offset": [
+            0,
+            3
+          ],
+          "padding": 5
+        },
+        {
+          "label": "visitor",
+          "rect": [
+            781,
+            637,
+            83,
+            98
+          ],
+          "offset": [
+            2,
+            -3
+          ],
+          "padding": 5
+        },
+        {
+          "label": "pointer",
+          "rect": [
+            1023,
+            673,
+            25,
+            35
+          ],
+          "offset": [
+            1,
+            0
+          ]
+        },
+        {
+          "label": "watermark",
+          "rect": [
+            1658,
+            683,
+            127,
+            67
+          ],
+          "offset": [
+            1,
+            1
+          ]
+        },
+        {
+          "label": "top-player-border",
+          "rect": [
+            0,
+            0,
+            1852,
+            8
+          ],
+          "offset": [
+            1,
+            -1
+          ]
+        },
+        {
+          "label": "bottom-player-border",
+          "rect": [
+            0,
+            721,
+            1852,
+            29
+          ],
+          "offset": [
+            1,
+            1
+          ]
+        }
+      ],
+      "actors": [
+        {
+          "id": "boss-male",
+          "mode": "seatedFront",
+          "head": [
+            1081,
+            137
+          ],
+          "foot": [
+            1091,
+            257
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "secretary-female",
+          "mode": "seatedFront",
+          "head": [
+            741,
+            637
+          ],
+          "foot": [
+            751,
+            757
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "avery",
+          "mode": "seatedFront",
+          "head": [
+            559,
+            319
+          ],
+          "foot": [
+            569,
+            439
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "jules",
+          "mode": "seatedBack",
+          "head": [
+            687,
+            402
+          ],
+          "foot": [
+            697,
+            522
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "morgan",
+          "mode": "seatedFront",
+          "head": [
+            698,
+            250
+          ],
+          "foot": [
+            708,
+            370
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "casey",
+          "mode": "seatedBack",
+          "head": [
+            832,
+            330
+          ],
+          "foot": [
+            842,
+            450
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "alex",
+          "mode": "seatedFront",
+          "head": [
+            933,
+            503
+          ],
+          "foot": [
+            943,
+            623
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "rebo",
+          "mode": "seatedBack",
+          "head": [
+            1068,
+            590
+          ],
+          "foot": [
+            1078,
+            710
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "karpathy",
+          "mode": "seatedFront",
+          "head": [
+            1087,
+            426
+          ],
+          "foot": [
+            1097,
+            546
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "boris",
+          "mode": "seatedBack",
+          "head": [
+            1217,
+            509
+          ],
+          "foot": [
+            1227,
+            629
+          ],
+          "direction": "southwest",
+          "route": []
+        },
+        {
+          "id": "max",
+          "mode": "standing",
+          "head": [
+            846,
+            412
+          ],
+          "foot": [
+            846,
+            532
+          ],
+          "direction": "southwest",
+          "route": [
+            [
+              891,
+              555
+            ],
+            [
+              842,
+              581
+            ],
+            [
+              784,
+              550
+            ]
+          ]
+        }
+      ],
+      "occluders": [
+        {
+          "polygon": [
+            [
+              507,
+              398
+            ],
+            [
+              640,
+              331
+            ],
+            [
+              777,
+              398
+            ],
+            [
+              642,
+              466
+            ],
+            [
+              642,
+              516
+            ],
+            [
+              507,
+              449
+            ]
+          ],
+          "depth": 516,
+          "actorIds": [
+            "avery"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              584,
+              337
+            ],
+            [
+              652,
+              303
+            ],
+            [
+              690,
+              321
+            ],
+            [
+              690,
+              399
+            ],
+            [
+              623,
+              433
+            ],
+            [
+              584,
+              413
+            ]
+          ],
+          "depth": 516,
+          "actorIds": [
+            "avery"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              653,
+              325
+            ],
+            [
+              786,
+              258
+            ],
+            [
+              923,
+              325
+            ],
+            [
+              788,
+              393
+            ],
+            [
+              788,
+              443
+            ],
+            [
+              653,
+              376
+            ]
+          ],
+          "depth": 443,
+          "actorIds": [
+            "morgan"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              730,
+              264
+            ],
+            [
+              798,
+              230
+            ],
+            [
+              836,
+              248
+            ],
+            [
+              836,
+              326
+            ],
+            [
+              769,
+              360
+            ],
+            [
+              730,
+              340
+            ]
+          ],
+          "depth": 443,
+          "actorIds": [
+            "morgan"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              881,
+              586
+            ],
+            [
+              1014,
+              519
+            ],
+            [
+              1151,
+              586
+            ],
+            [
+              1016,
+              654
+            ],
+            [
+              1016,
+              704
+            ],
+            [
+              881,
+              637
+            ]
+          ],
+          "depth": 704,
+          "actorIds": [
+            "alex"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              958,
+              525
+            ],
+            [
+              1026,
+              491
+            ],
+            [
+              1064,
+              509
+            ],
+            [
+              1064,
+              587
+            ],
+            [
+              997,
+              621
+            ],
+            [
+              958,
+              601
+            ]
+          ],
+          "depth": 704,
+          "actorIds": [
+            "alex"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              1027,
+              511
+            ],
+            [
+              1160,
+              444
+            ],
+            [
+              1297,
+              511
+            ],
+            [
+              1162,
+              579
+            ],
+            [
+              1162,
+              629
+            ],
+            [
+              1027,
+              562
+            ]
+          ],
+          "depth": 629,
+          "actorIds": [
+            "karpathy"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              1104,
+              450
+            ],
+            [
+              1172,
+              416
+            ],
+            [
+              1210,
+              434
+            ],
+            [
+              1210,
+              512
+            ],
+            [
+              1143,
+              546
+            ],
+            [
+              1104,
+              526
+            ]
+          ],
+          "depth": 629,
+          "actorIds": [
+            "karpathy"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              898,
+              194
+            ],
+            [
+              995,
+              145
+            ],
+            [
+              1096,
+              194
+            ],
+            [
+              998,
+              244
+            ],
+            [
+              998,
+              304
+            ],
+            [
+              898,
+              254
+            ]
+          ],
+          "depth": 315,
+          "actorIds": [
+            "boss-male"
+          ]
+        },
+        {
+          "polygon": [
+            [
+              601,
+              678
+            ],
+            [
+              674,
+              641
+            ],
+            [
+              848,
+              719
+            ],
+            [
+              812,
+              750
+            ],
+            [
+              601,
+              750
+            ]
+          ],
+          "depth": 790,
+          "actorIds": [
+            "secretary-female"
+          ]
+        }
+      ],
+      "patches": [
+        "8-reception-patch.png"
+      ],
+      "width": 1852,
+      "height": 750,
+      "clean": "8-clean.png",
+      "mask": "8-repair-mask.png",
+      "diff": "8-diff.png",
+      "stats": {
+        "outsideMaskChanged": 0,
+        "repairPixels": 154712,
+        "changedRepairPixels": 153684,
+        "preservedPixels": 1234288,
+        "preservedPercent": 88.86162706983441
+      }
+    }
+  }
+}

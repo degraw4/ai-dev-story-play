@@ -1,0 +1,4537 @@
+{
+  "version": "character-rig-v6",
+  "rig": "pixel-pose-rig-v2",
+  "pixelGrid": 2,
+  "sequence": [
+    0,
+    1,
+    0,
+    2
+  ],
+  "characters": {
+    "avery": {
+      "name": "Avery Loop",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              0,
+              128,
+              128
+            ],
+            [
+              128,
+              0,
+              128,
+              128
+            ],
+            [
+              256,
+              0,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              0,
+              128,
+              128
+            ],
+            [
+              512,
+              0,
+              128,
+              128
+            ],
+            [
+              640,
+              0,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              128,
+              128,
+              128
+            ],
+            [
+              128,
+              128,
+              128,
+              128
+            ],
+            [
+              256,
+              128,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              128,
+              128,
+              128
+            ],
+            [
+              512,
+              128,
+              128,
+              128
+            ],
+            [
+              640,
+              128,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              256,
+              128,
+              128
+            ],
+            [
+              128,
+              256,
+              128,
+              128
+            ],
+            [
+              256,
+              256,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              128,
+              128,
+              128
+            ],
+            [
+              128,
+              128,
+              128,
+              128
+            ],
+            [
+              256,
+              128,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              128,
+              128,
+              128
+            ],
+            [
+              512,
+              128,
+              128,
+              128
+            ],
+            [
+              640,
+              128,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              256,
+              128,
+              128
+            ],
+            [
+              128,
+              256,
+              128,
+              128
+            ],
+            [
+              256,
+              256,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        280,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        280,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        408,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        408,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        408,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        408,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        278,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "jules": {
+      "name": "Jules Page",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              512,
+              128,
+              128
+            ],
+            [
+              128,
+              512,
+              128,
+              128
+            ],
+            [
+              256,
+              512,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              512,
+              128,
+              128
+            ],
+            [
+              512,
+              512,
+              128,
+              128
+            ],
+            [
+              640,
+              512,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              640,
+              128,
+              128
+            ],
+            [
+              128,
+              640,
+              128,
+              128
+            ],
+            [
+              256,
+              640,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              640,
+              128,
+              128
+            ],
+            [
+              512,
+              640,
+              128,
+              128
+            ],
+            [
+              640,
+              640,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              768,
+              128,
+              128
+            ],
+            [
+              128,
+              768,
+              128,
+              128
+            ],
+            [
+              256,
+              768,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              640,
+              128,
+              128
+            ],
+            [
+              128,
+              640,
+              128,
+              128
+            ],
+            [
+              256,
+              640,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              640,
+              128,
+              128
+            ],
+            [
+              512,
+              640,
+              128,
+              128
+            ],
+            [
+              640,
+              640,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              768,
+              128,
+              128
+            ],
+            [
+              128,
+              768,
+              128,
+              128
+            ],
+            [
+              256,
+              768,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        792,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        792,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        920,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        920,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        920,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        920,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        790,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "morgan": {
+      "name": "Morgan Byte",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              1024,
+              128,
+              128
+            ],
+            [
+              128,
+              1024,
+              128,
+              128
+            ],
+            [
+              256,
+              1024,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              1024,
+              128,
+              128
+            ],
+            [
+              512,
+              1024,
+              128,
+              128
+            ],
+            [
+              640,
+              1024,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              1152,
+              128,
+              128
+            ],
+            [
+              128,
+              1152,
+              128,
+              128
+            ],
+            [
+              256,
+              1152,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              1152,
+              128,
+              128
+            ],
+            [
+              512,
+              1152,
+              128,
+              128
+            ],
+            [
+              640,
+              1152,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              1280,
+              128,
+              128
+            ],
+            [
+              128,
+              1280,
+              128,
+              128
+            ],
+            [
+              256,
+              1280,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              1152,
+              128,
+              128
+            ],
+            [
+              128,
+              1152,
+              128,
+              128
+            ],
+            [
+              256,
+              1152,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              1152,
+              128,
+              128
+            ],
+            [
+              512,
+              1152,
+              128,
+              128
+            ],
+            [
+              640,
+              1152,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              1280,
+              128,
+              128
+            ],
+            [
+              128,
+              1280,
+              128,
+              128
+            ],
+            [
+              256,
+              1280,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        1304,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        1304,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        1432,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        1432,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        1432,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        1432,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        1302,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "casey": {
+      "name": "Casey Deck",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              1536,
+              128,
+              128
+            ],
+            [
+              128,
+              1536,
+              128,
+              128
+            ],
+            [
+              256,
+              1536,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              1536,
+              128,
+              128
+            ],
+            [
+              512,
+              1536,
+              128,
+              128
+            ],
+            [
+              640,
+              1536,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              1664,
+              128,
+              128
+            ],
+            [
+              128,
+              1664,
+              128,
+              128
+            ],
+            [
+              256,
+              1664,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              1664,
+              128,
+              128
+            ],
+            [
+              512,
+              1664,
+              128,
+              128
+            ],
+            [
+              640,
+              1664,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              1792,
+              128,
+              128
+            ],
+            [
+              128,
+              1792,
+              128,
+              128
+            ],
+            [
+              256,
+              1792,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              1664,
+              128,
+              128
+            ],
+            [
+              128,
+              1664,
+              128,
+              128
+            ],
+            [
+              256,
+              1664,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              1664,
+              128,
+              128
+            ],
+            [
+              512,
+              1664,
+              128,
+              128
+            ],
+            [
+              640,
+              1664,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              1792,
+              128,
+              128
+            ],
+            [
+              128,
+              1792,
+              128,
+              128
+            ],
+            [
+              256,
+              1792,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        1816,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        1816,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        1944,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        1944,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        1944,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        1944,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        1814,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "alex": {
+      "name": "Alex Weng",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              2048,
+              128,
+              128
+            ],
+            [
+              128,
+              2048,
+              128,
+              128
+            ],
+            [
+              256,
+              2048,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              2048,
+              128,
+              128
+            ],
+            [
+              512,
+              2048,
+              128,
+              128
+            ],
+            [
+              640,
+              2048,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              2176,
+              128,
+              128
+            ],
+            [
+              128,
+              2176,
+              128,
+              128
+            ],
+            [
+              256,
+              2176,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              2176,
+              128,
+              128
+            ],
+            [
+              512,
+              2176,
+              128,
+              128
+            ],
+            [
+              640,
+              2176,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              2304,
+              128,
+              128
+            ],
+            [
+              128,
+              2304,
+              128,
+              128
+            ],
+            [
+              256,
+              2304,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              2176,
+              128,
+              128
+            ],
+            [
+              128,
+              2176,
+              128,
+              128
+            ],
+            [
+              256,
+              2176,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              2176,
+              128,
+              128
+            ],
+            [
+              512,
+              2176,
+              128,
+              128
+            ],
+            [
+              640,
+              2176,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              2304,
+              128,
+              128
+            ],
+            [
+              128,
+              2304,
+              128,
+              128
+            ],
+            [
+              256,
+              2304,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        2328,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        2328,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        2456,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        2456,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        2456,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        2456,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        2326,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ],
+      "gender": "male",
+      "hair": "long"
+    },
+    "rebo": {
+      "name": "Rebo",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              2560,
+              128,
+              128
+            ],
+            [
+              128,
+              2560,
+              128,
+              128
+            ],
+            [
+              256,
+              2560,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              2560,
+              128,
+              128
+            ],
+            [
+              512,
+              2560,
+              128,
+              128
+            ],
+            [
+              640,
+              2560,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              2688,
+              128,
+              128
+            ],
+            [
+              128,
+              2688,
+              128,
+              128
+            ],
+            [
+              256,
+              2688,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              2688,
+              128,
+              128
+            ],
+            [
+              512,
+              2688,
+              128,
+              128
+            ],
+            [
+              640,
+              2688,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              2816,
+              128,
+              128
+            ],
+            [
+              128,
+              2816,
+              128,
+              128
+            ],
+            [
+              256,
+              2816,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              2688,
+              128,
+              128
+            ],
+            [
+              128,
+              2688,
+              128,
+              128
+            ],
+            [
+              256,
+              2688,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              2688,
+              128,
+              128
+            ],
+            [
+              512,
+              2688,
+              128,
+              128
+            ],
+            [
+              640,
+              2688,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              2816,
+              128,
+              128
+            ],
+            [
+              128,
+              2816,
+              128,
+              128
+            ],
+            [
+              256,
+              2816,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        2840,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        2840,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        2968,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        2968,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        2968,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        2968,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        2838,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "karpathy": {
+      "name": "卡帕题",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              3072,
+              128,
+              128
+            ],
+            [
+              128,
+              3072,
+              128,
+              128
+            ],
+            [
+              256,
+              3072,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              3072,
+              128,
+              128
+            ],
+            [
+              512,
+              3072,
+              128,
+              128
+            ],
+            [
+              640,
+              3072,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              3200,
+              128,
+              128
+            ],
+            [
+              128,
+              3200,
+              128,
+              128
+            ],
+            [
+              256,
+              3200,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              3200,
+              128,
+              128
+            ],
+            [
+              512,
+              3200,
+              128,
+              128
+            ],
+            [
+              640,
+              3200,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              3328,
+              128,
+              128
+            ],
+            [
+              128,
+              3328,
+              128,
+              128
+            ],
+            [
+              256,
+              3328,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              3200,
+              128,
+              128
+            ],
+            [
+              128,
+              3200,
+              128,
+              128
+            ],
+            [
+              256,
+              3200,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              3200,
+              128,
+              128
+            ],
+            [
+              512,
+              3200,
+              128,
+              128
+            ],
+            [
+              640,
+              3200,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              3328,
+              128,
+              128
+            ],
+            [
+              128,
+              3328,
+              128,
+              128
+            ],
+            [
+              256,
+              3328,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        3352,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        3352,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        3480,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        3480,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        3480,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        3480,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        3350,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "boris": {
+      "name": "Boris Cherry",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              3584,
+              128,
+              128
+            ],
+            [
+              128,
+              3584,
+              128,
+              128
+            ],
+            [
+              256,
+              3584,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              3584,
+              128,
+              128
+            ],
+            [
+              512,
+              3584,
+              128,
+              128
+            ],
+            [
+              640,
+              3584,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              3712,
+              128,
+              128
+            ],
+            [
+              128,
+              3712,
+              128,
+              128
+            ],
+            [
+              256,
+              3712,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              3712,
+              128,
+              128
+            ],
+            [
+              512,
+              3712,
+              128,
+              128
+            ],
+            [
+              640,
+              3712,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              3840,
+              128,
+              128
+            ],
+            [
+              128,
+              3840,
+              128,
+              128
+            ],
+            [
+              256,
+              3840,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              3712,
+              128,
+              128
+            ],
+            [
+              128,
+              3712,
+              128,
+              128
+            ],
+            [
+              256,
+              3712,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              3712,
+              128,
+              128
+            ],
+            [
+              512,
+              3712,
+              128,
+              128
+            ],
+            [
+              640,
+              3712,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              3840,
+              128,
+              128
+            ],
+            [
+              128,
+              3840,
+              128,
+              128
+            ],
+            [
+              256,
+              3840,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        3864,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        3864,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        3992,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        3992,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        3992,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        3992,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        3862,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "tim": {
+      "name": "Tim Detmer",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              4096,
+              128,
+              128
+            ],
+            [
+              128,
+              4096,
+              128,
+              128
+            ],
+            [
+              256,
+              4096,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              4096,
+              128,
+              128
+            ],
+            [
+              512,
+              4096,
+              128,
+              128
+            ],
+            [
+              640,
+              4096,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              4224,
+              128,
+              128
+            ],
+            [
+              128,
+              4224,
+              128,
+              128
+            ],
+            [
+              256,
+              4224,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              4224,
+              128,
+              128
+            ],
+            [
+              512,
+              4224,
+              128,
+              128
+            ],
+            [
+              640,
+              4224,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              4352,
+              128,
+              128
+            ],
+            [
+              128,
+              4352,
+              128,
+              128
+            ],
+            [
+              256,
+              4352,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              4224,
+              128,
+              128
+            ],
+            [
+              128,
+              4224,
+              128,
+              128
+            ],
+            [
+              256,
+              4224,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              4224,
+              128,
+              128
+            ],
+            [
+              512,
+              4224,
+              128,
+              128
+            ],
+            [
+              640,
+              4224,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              4352,
+              128,
+              128
+            ],
+            [
+              128,
+              4352,
+              128,
+              128
+            ],
+            [
+              256,
+              4352,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        4376,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        4376,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        4504,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        4504,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        4504,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        4504,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        4374,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "max": {
+      "name": "Max Score",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              4608,
+              128,
+              128
+            ],
+            [
+              128,
+              4608,
+              128,
+              128
+            ],
+            [
+              256,
+              4608,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              4608,
+              128,
+              128
+            ],
+            [
+              512,
+              4608,
+              128,
+              128
+            ],
+            [
+              640,
+              4608,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              4736,
+              128,
+              128
+            ],
+            [
+              128,
+              4736,
+              128,
+              128
+            ],
+            [
+              256,
+              4736,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              4736,
+              128,
+              128
+            ],
+            [
+              512,
+              4736,
+              128,
+              128
+            ],
+            [
+              640,
+              4736,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              4864,
+              128,
+              128
+            ],
+            [
+              128,
+              4864,
+              128,
+              128
+            ],
+            [
+              256,
+              4864,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              4736,
+              128,
+              128
+            ],
+            [
+              128,
+              4736,
+              128,
+              128
+            ],
+            [
+              256,
+              4736,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              4736,
+              128,
+              128
+            ],
+            [
+              512,
+              4736,
+              128,
+              128
+            ],
+            [
+              640,
+              4736,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              4864,
+              128,
+              128
+            ],
+            [
+              128,
+              4864,
+              128,
+              128
+            ],
+            [
+              256,
+              4864,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        4888,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        4888,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        5016,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        5016,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        5016,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        5016,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        4886,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "boss-male": {
+      "name": "老板 · 男",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              5120,
+              128,
+              128
+            ],
+            [
+              128,
+              5120,
+              128,
+              128
+            ],
+            [
+              256,
+              5120,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              5120,
+              128,
+              128
+            ],
+            [
+              512,
+              5120,
+              128,
+              128
+            ],
+            [
+              640,
+              5120,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              5248,
+              128,
+              128
+            ],
+            [
+              128,
+              5248,
+              128,
+              128
+            ],
+            [
+              256,
+              5248,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              5248,
+              128,
+              128
+            ],
+            [
+              512,
+              5248,
+              128,
+              128
+            ],
+            [
+              640,
+              5248,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              5376,
+              128,
+              128
+            ],
+            [
+              128,
+              5376,
+              128,
+              128
+            ],
+            [
+              256,
+              5376,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              5248,
+              128,
+              128
+            ],
+            [
+              128,
+              5248,
+              128,
+              128
+            ],
+            [
+              256,
+              5248,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              5248,
+              128,
+              128
+            ],
+            [
+              512,
+              5248,
+              128,
+              128
+            ],
+            [
+              640,
+              5248,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              5376,
+              128,
+              128
+            ],
+            [
+              128,
+              5376,
+              128,
+              128
+            ],
+            [
+              256,
+              5376,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        5400,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        5400,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        5528,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        5528,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        5528,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        5528,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        5398,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "boss-female": {
+      "name": "老板 · 女",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              5632,
+              128,
+              128
+            ],
+            [
+              128,
+              5632,
+              128,
+              128
+            ],
+            [
+              256,
+              5632,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              5632,
+              128,
+              128
+            ],
+            [
+              512,
+              5632,
+              128,
+              128
+            ],
+            [
+              640,
+              5632,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              5760,
+              128,
+              128
+            ],
+            [
+              128,
+              5760,
+              128,
+              128
+            ],
+            [
+              256,
+              5760,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              5760,
+              128,
+              128
+            ],
+            [
+              512,
+              5760,
+              128,
+              128
+            ],
+            [
+              640,
+              5760,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              5888,
+              128,
+              128
+            ],
+            [
+              128,
+              5888,
+              128,
+              128
+            ],
+            [
+              256,
+              5888,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              5760,
+              128,
+              128
+            ],
+            [
+              128,
+              5760,
+              128,
+              128
+            ],
+            [
+              256,
+              5760,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              5760,
+              128,
+              128
+            ],
+            [
+              512,
+              5760,
+              128,
+              128
+            ],
+            [
+              640,
+              5760,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              5888,
+              128,
+              128
+            ],
+            [
+              128,
+              5888,
+              128,
+              128
+            ],
+            [
+              256,
+              5888,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        5912,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        5912,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        6040,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        6040,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        6040,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        6040,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        5910,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "secretary-female": {
+      "name": "小满 · 女",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              6144,
+              128,
+              128
+            ],
+            [
+              128,
+              6144,
+              128,
+              128
+            ],
+            [
+              256,
+              6144,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              6144,
+              128,
+              128
+            ],
+            [
+              512,
+              6144,
+              128,
+              128
+            ],
+            [
+              640,
+              6144,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              6272,
+              128,
+              128
+            ],
+            [
+              128,
+              6272,
+              128,
+              128
+            ],
+            [
+              256,
+              6272,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              6272,
+              128,
+              128
+            ],
+            [
+              512,
+              6272,
+              128,
+              128
+            ],
+            [
+              640,
+              6272,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              6400,
+              128,
+              128
+            ],
+            [
+              128,
+              6400,
+              128,
+              128
+            ],
+            [
+              256,
+              6400,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              6272,
+              128,
+              128
+            ],
+            [
+              128,
+              6272,
+              128,
+              128
+            ],
+            [
+              256,
+              6272,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              6272,
+              128,
+              128
+            ],
+            [
+              512,
+              6272,
+              128,
+              128
+            ],
+            [
+              640,
+              6272,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              6400,
+              128,
+              128
+            ],
+            [
+              128,
+              6400,
+              128,
+              128
+            ],
+            [
+              256,
+              6400,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        6424,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        6424,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        6552,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        6552,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        6552,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        6552,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        6422,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    },
+    "secretary-male": {
+      "name": "小满 · 男",
+      "headWidth": 45,
+      "directions": {
+        "south": {
+          "rects": [
+            [
+              0,
+              6656,
+              128,
+              128
+            ],
+            [
+              128,
+              6656,
+              128,
+              128
+            ],
+            [
+              256,
+              6656,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "north": {
+          "rects": [
+            [
+              384,
+              6656,
+              128,
+              128
+            ],
+            [
+              512,
+              6656,
+              128,
+              128
+            ],
+            [
+              640,
+              6656,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "west": {
+          "rects": [
+            [
+              0,
+              6784,
+              128,
+              128
+            ],
+            [
+              128,
+              6784,
+              128,
+              128
+            ],
+            [
+              256,
+              6784,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "southwest": {
+          "rects": [
+            [
+              384,
+              6784,
+              128,
+              128
+            ],
+            [
+              512,
+              6784,
+              128,
+              128
+            ],
+            [
+              640,
+              6784,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "northwest": {
+          "rects": [
+            [
+              0,
+              6912,
+              128,
+              128
+            ],
+            [
+              128,
+              6912,
+              128,
+              128
+            ],
+            [
+              256,
+              6912,
+              128,
+              128
+            ]
+          ],
+          "mirror": false
+        },
+        "east": {
+          "rects": [
+            [
+              0,
+              6784,
+              128,
+              128
+            ],
+            [
+              128,
+              6784,
+              128,
+              128
+            ],
+            [
+              256,
+              6784,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "west"
+        },
+        "southeast": {
+          "rects": [
+            [
+              384,
+              6784,
+              128,
+              128
+            ],
+            [
+              512,
+              6784,
+              128,
+              128
+            ],
+            [
+              640,
+              6784,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "southwest"
+        },
+        "northeast": {
+          "rects": [
+            [
+              0,
+              6912,
+              128,
+              128
+            ],
+            [
+              128,
+              6912,
+              128,
+              128
+            ],
+            [
+              256,
+              6912,
+              128,
+              128
+            ]
+          ],
+          "mirror": true,
+          "mirroredFrom": "northwest"
+        }
+      },
+      "seatedFront": [
+        416,
+        6936,
+        64,
+        84
+      ],
+      "seatedBack": [
+        544,
+        6936,
+        64,
+        84
+      ],
+      "seatedFull": [
+        32,
+        7064,
+        64,
+        104
+      ],
+      "seatedBackFull": [
+        160,
+        7064,
+        64,
+        104
+      ],
+      "seatedLowerBody": [
+        288,
+        7064,
+        64,
+        104
+      ],
+      "seatedBackLowerBody": [
+        416,
+        7064,
+        64,
+        104
+      ],
+      "seatedFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          20,
+          102
+        ],
+        "mirroredFeet": [
+          44,
+          102
+        ]
+      },
+      "seatedBackFullAnchors": {
+        "head": [
+          32,
+          25.5
+        ],
+        "feet": [
+          28,
+          102
+        ],
+        "mirroredFeet": [
+          36,
+          102
+        ]
+      },
+      "seatedDirections": {
+        "southwest": {
+          "pose": "seatedFront",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFront",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBack",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBack",
+          "mirror": true
+        }
+      },
+      "seatedFullDirections": {
+        "southwest": {
+          "pose": "seatedFull",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedFull",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackFull",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackFull",
+          "mirror": true
+        }
+      },
+      "seatedLowerBodyDirections": {
+        "southwest": {
+          "pose": "seatedLowerBody",
+          "mirror": false
+        },
+        "southeast": {
+          "pose": "seatedLowerBody",
+          "mirror": true
+        },
+        "northwest": {
+          "pose": "seatedBackLowerBody",
+          "mirror": false
+        },
+        "northeast": {
+          "pose": "seatedBackLowerBody",
+          "mirror": true
+        }
+      },
+      "portrait": [
+        675,
+        6934,
+        58,
+        62
+      ],
+      "ground": [
+        64,
+        120
+      ]
+    }
+  },
+  "order": [
+    "avery",
+    "jules",
+    "morgan",
+    "casey",
+    "alex",
+    "rebo",
+    "karpathy",
+    "boris",
+    "tim",
+    "max",
+    "boss-male",
+    "boss-female",
+    "secretary-female",
+    "secretary-male"
+  ],
+  "sourceHashes": {
+    "assets/characters/body-poses-v2.png": "c363cbbe21ed81ac10fc8102404ed4cf74def16457686b3e996967240c39e0fe",
+    "assets/characters/body-materials-v2.png": "679ac9861612b932a220ce24feb3a8b88dee5dc27fa59983bd128023ab5cf136",
+    "assets/office/office-walk-reviewed-v1.png": "2524af101919f4a520f5115bb17670e4959c9b45a338c85243a6fa49b664497c",
+    "assets/characters/heads-staff-a-v1.png": "70c9af03631edc95e276e77fec324b36b31ee6d0aeb0cb2b956b4518bfeb6026",
+    "assets/characters/heads-alex-long-v1.png": "448ad8acb475e83df0837a3cd1134b5edab1838b3e08b545de6978b20482a156",
+    "assets/characters/heads-staff-b-v1.png": "83fdd9ce33d35895e49704a339a34848a9796a1a37bfaf36d3ac4d84d4455162",
+    "assets/characters/heads-staff-c-v1.png": "22f649108ec8cd54505d825483b487a33f411e4f0169d594afa1d35fc37b0a51",
+    "assets/characters/heads-leadership-v1.png": "1527d0511ef9ce291bd4bf065a369a3e5d526c8d3c8eeeb8958e5e21af23ad7d",
+    "assets/characters/rig-v2.json": "71460851004574a494724ecf0051f28d3a32375c04582901a6b04e20f319c151",
+    "assets/characters/skins-v2.json": "4feeb2c6ab26af344f45a3f2f3c496127a65e580a060e17e548140da50b287fa"
+  }
+}
