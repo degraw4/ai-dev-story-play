@@ -6,7 +6,7 @@
 
 ## [立即游玩 →](https://degraw4.github.io/ai-dev-story-play/)
 
-![AI发展国游戏画面](assets/preview/office.png)
+![AI发展国实机画面：四人团队正在研发第一款模型](assets/preview/office.jpg)
 
 ## 游戏特色
 
